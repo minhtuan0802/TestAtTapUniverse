@@ -1,0 +1,6 @@
+framework module Pods_TestAtTapUniverse {
+  umbrella header "Pods-TestAtTapUniverse-umbrella.h"
+
+  export *
+  module * { export * }
+}

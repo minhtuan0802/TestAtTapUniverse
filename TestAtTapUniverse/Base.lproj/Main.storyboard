@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestAtTapUniverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49N-FY-mln">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="49N-FY-mln" secondAttribute="height" id="pSd-HT-KfJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="yVz-Fk-nqk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E85-hV-pVJ">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsA-mg-vOl" customClass="MSCircularSlider">
+                                <rect key="frame" x="89.5" y="330.5" width="235" height="235"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="8D2-ny-DDx"/>
+                                    <constraint firstAttribute="width" secondItem="GsA-mg-vOl" secondAttribute="height" id="jbI-RQ-ubt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_filledColor">
+                                        <color key="value" systemColor="systemTealColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_unfilledColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_handleColor">
+                                        <color key="value" systemColor="systemTealColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_handleEnlargementPoints">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_rotationAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wea-fJ-EMr"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHU-ab-KsC">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3Q-oE-Xo9">
+                                        <rect key="frame" x="6" y="18" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="D3Q-oE-Xo9" firstAttribute="centerX" secondItem="nHU-ab-KsC" secondAttribute="centerX" id="3xs-ZS-a0o"/>
+                                    <constraint firstAttribute="width" constant="60" id="KK3-Ka-Oid"/>
+                                    <constraint firstItem="D3Q-oE-Xo9" firstAttribute="centerY" secondItem="nHU-ab-KsC" secondAttribute="centerY" id="QjZ-ng-ggw"/>
+                                    <constraint firstAttribute="width" secondItem="nHU-ab-KsC" secondAttribute="height" id="ZFz-SZ-m6k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GsA-mg-vOl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Gy-BV-y3f"/>
+                            <constraint firstItem="GsA-mg-vOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7af-wV-cpe"/>
+                            <constraint firstItem="49N-FY-mln" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9E0-MN-10U"/>
+                            <constraint firstItem="nHU-ab-KsC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ode-yX-iC4"/>
+                            <constraint firstItem="49N-FY-mln" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jdq-bA-wc5"/>
+                            <constraint firstItem="nHU-ab-KsC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="umQ-wm-rve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeView" destination="E85-hV-pVJ" id="s4y-EF-yBI"/>
+                        <outlet property="containerView" destination="49N-FY-mln" id="WtC-Cq-2NV"/>
+                        <outlet property="numberLabel" destination="D3Q-oE-Xo9" id="UBu-og-CjB"/>
+                        <outlet property="numberView" destination="nHU-ab-KsC" id="sbp-sN-v4O"/>
+                        <outlet property="slider" destination="GsA-mg-vOl" id="zse-IN-pdV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="GsA-mg-vOl">
+            <size key="intrinsicContentSize" width="229" height="229"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
